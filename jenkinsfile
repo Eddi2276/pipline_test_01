@@ -1,0 +1,36 @@
+pipeline {
+
+
+    agent any
+
+    stages {
+
+        stage("bulid") {
+
+            steps {
+                echo 'build the application'
+                python3 kreis.py
+                
+
+            }
+        }stage("test") {
+
+            steps {
+                echo 'test the application'
+                python3 -m unittest test_kreis.py
+
+                
+            }
+        }
+        stage("deploy") {
+
+            steps {
+                echo 'deploy the application'
+
+                
+            }
+        }
+
+    }
+
+}
