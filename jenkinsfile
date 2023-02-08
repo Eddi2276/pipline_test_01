@@ -8,7 +8,7 @@ pipeline {
         stage("bulid") {
 
             steps {
-                echo 'build the application'
+                echo 'build the applicatio'
                 python3 kreis.py
                 
 
