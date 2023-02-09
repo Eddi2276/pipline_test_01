@@ -2,23 +2,23 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('build kreis.py') {
             steps {
-                echo 'Hello World'
+                echo 'build kreis'
                 sh 'python3 kreis.py'
             }
         }
-        stage('Hello2') {
+        stage('build test_kreis.py') {
             steps {
-                echo 'Hello World2'
+                echo 'test kreis'
                  sh 'python3 -m unittest kreis.py'//python code ausführen mit sh '...'
             }
            
 
         }
-        stage('Hello3') {
+        stage('succsess') {
             steps {
-                echo 'Hello World3'
+                echo 'good job!'
             }
         }
     }
