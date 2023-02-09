@@ -5,7 +5,7 @@ def kreis_flache(r):
 
 # test function
 
-radii =[2, 0, -3, 2 + 5j]
+radii =[2, 0, 3,5,6,7]
 message = "Kreisflaeche von r = {radius} ist {flaeche}."
 
 for r in radii:
