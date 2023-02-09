@@ -5,12 +5,15 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
-                python3 kreis.py
+                
             }
         }
         stage('Hello2') {
             steps {
                 echo 'Hello World2'
+                python3 -m kreis.py
+
+
             }
         }
         stage('Hello3') {
