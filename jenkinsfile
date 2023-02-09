@@ -36,4 +36,14 @@ pipeline {
             }
         }
     }
+
+    post {
+  failure {
+    echo 'du hast verkackt'
+  }
+  sucsess {
+        echo 'lief gut, man kann hier auch andere befehle ausführen z.b. cp datei.c in /ordner/ordner2/...'
+
+  }
+}
 }
