@@ -27,8 +27,10 @@ pipeline {
         }
         stage('output c file'){
             steps{
+                dir('cfiles'){
                  sh'./a.out'
                 echo'c file output sucsessfull'
+                }
             }
         }
     }
