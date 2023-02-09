@@ -5,13 +5,13 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
-                
+                sh 'python3 kreis.py'
             }
         }
         stage('Hello2') {
             steps {
                 echo 'Hello World2'
-                 sh 'python3 -m unittest kreis.py'
+                 sh 'python3 -m unittest kreis.py'//python code ausführen mit sh '...'
             }
            
 
