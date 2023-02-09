@@ -21,9 +21,14 @@ pipeline {
                 dir('cfiles') {
                     sh'gcc liste.c'
                     echo'change to cfiles sucsessfull'
-                    sh'./a.out'
-                    echo'c file output sucsessfull'
                 }
+            
+            }
+        }
+        stage(output c file){
+            steps{
+                 sh'./a.out'
+                echo'c file output sucsessfull'
             }
         }
     }
