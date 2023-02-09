@@ -1,34 +1,11 @@
 pipeline {
-
-
     agent any
 
     stages {
-
-        stage("bulid") {
-
+        stage('Hello') {
             steps {
-                echo 'build the applicatio'
-                
-
-            }
-        }stage("test") {
-
-            steps {
-                echo 'test the application'
-
-                
+                echo 'Hello World'
             }
         }
-        stage("deployment") {
-
-            steps {
-                echo 'deploy the application'
-
-                
-            }
-        }
-
     }
-
 }
