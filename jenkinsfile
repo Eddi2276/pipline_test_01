@@ -25,7 +25,7 @@ pipeline {
             
             }
         }
-        stage(output c file){
+        stage('output c file'){
             steps{
                  sh'./a.out'
                 echo'c file output sucsessfull'
