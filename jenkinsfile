@@ -13,7 +13,7 @@ pipeline {
                 echo 'Hello World2'
             }
             steps {
-                python3 -m unittest kreis.py
+                sh 'python3 -m unittest kreis.py'
             }
 
         }
