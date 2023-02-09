@@ -11,8 +11,7 @@ pipeline {
         stage('Hello2') {
             steps {
                 echo 'Hello World2'
-                python3 -m unittest test_kreis.py
-
+                    python -m unittest kreis.py
 
             }
         }
