@@ -9,7 +9,6 @@ pipeline {
 
             steps {
                 echo 'build the applicatio'
-                python3 kreis.py
                 
 
             }
@@ -17,7 +16,6 @@ pipeline {
 
             steps {
                 echo 'test the application'
-                python3 -m unittest test_kreis.py
 
                 
             }
