@@ -20,8 +20,8 @@ pipeline {
             steps {
                 dir('cfiles') {
                     sh'gcc liste.c'
-                    echo'change to cfiles sucsessfull'
-                    echo'compile  liste sucsessfull'
+                    echo'change to cfiles successfull'
+                    echo'compile  liste successfull'
 
                 }
             
@@ -31,7 +31,7 @@ pipeline {
             steps{
                 dir('cfiles'){
                  sh'./a.out'
-                echo'liste output sucsessfull'
+                echo'liste output successfull'
                 }
             }
         }
@@ -41,7 +41,7 @@ pipeline {
   failure {
     echo 'du hast verkackt'
   }
-  sucsess {
+  success {
         echo 'lief gut, man kann hier auch andere befehle ausführen z.b. cp datei.c in /ordner/ordner2/...'
 
   }
