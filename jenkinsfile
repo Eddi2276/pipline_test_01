@@ -39,7 +39,7 @@ pipeline {
 
     post {
   failure {
-    echo 'du hast verkackt'
+    echo 'du hast verkackt loool'
   }
   success {
         echo 'lief gut, man kann hier auch andere befehle ausführen z.b. cp datei.c in /ordner/ordner2/...'
